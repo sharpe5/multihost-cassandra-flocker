@@ -99,6 +99,15 @@ Creating cassandra-3
 Creating cassandra-2
 ```
 
+The running containers
+```
+docker ps
+CONTAINER ID        IMAGE                                    COMMAND                  CREATED             STATUS              PORTS                                                                 NAMES
+75868663fc45        cassandra                                "/docker-entrypoint.s"   22 minutes ago      Up 22 minutes       7001/tcp, 7199/tcp, 9042/tcp, 9160/tcp, 10.0.195.84:32773->7000/tcp   ip-10-0-195-84/cassandra-2
+cc5ee1fc0faa        cassandra                                "/docker-entrypoint.s"   22 minutes ago      Up 20 minutes       7001/tcp, 7199/tcp, 9042/tcp, 9160/tcp, 10.0.57.22:32775->7000/tcp    ip-10-0-57-22/cassandra-3
+0d8ea530863f        cassandra                                "/docker-entrypoint.s"   22 minutes ago      Up 22 minutes       7001/tcp, 7199/tcp, 9042/tcp, 9160/tcp, 10.0.57.22:32773->7000/tcp    ip-10-0-57-22/cassandra-1
+```
+
 ### Data is now in flocker
 
 Checking on a node that is running two of our three cassandra nodes we can see the flocker volumes mounts and data inside them.
