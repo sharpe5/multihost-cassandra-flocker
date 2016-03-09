@@ -73,7 +73,7 @@ volumes:
 networks:
   default:
     external:
-       name: ryan-net
+       name: overlay-net
 ```
 
 ### Restart is always because
