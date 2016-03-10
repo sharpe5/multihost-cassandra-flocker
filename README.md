@@ -62,13 +62,13 @@ services:
 volumes:
   cassandra1:
     external:
-        name: testvol
+        name: testvol1
   cassandra2:
     external:
-        name: testvol4
+        name: testvol2
   cassandra3:
     external:
-        name: testvol5
+        name: testvol3
 
 networks:
   default:
